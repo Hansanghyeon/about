@@ -40,7 +40,6 @@
   },
   "require": {
     "php": "^7.4|^8.0",
-    "google/apiclient": "^2.12",
     "nesbot/carbon": "^2.62",
     "roots/acorn": "^2.1"
   },
