@@ -5,7 +5,7 @@ namespace App\View\Composers;
 use Roots\Acorn\View\Composer;
 use WP\Archive\UI;
 
-class Hansanghyeon extends Composer
+class Homepage extends Composer
 {
     /**
      * List of views served by this composer.
@@ -13,7 +13,7 @@ class Hansanghyeon extends Composer
      * @var array
      */
     protected static $views = [
-        'author-hansanghyeon',
+        'front-page'
     ];
 
     /**

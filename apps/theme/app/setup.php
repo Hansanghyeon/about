@@ -6,6 +6,8 @@
 
 namespace App;
 
+use WP_Query;
+
 use function Roots\bundle;
 use function Roots\asset;
 
@@ -155,9 +157,8 @@ add_action('widgets_init', function () {
 });
 
 add_action('pre_get_posts', function ($query) {
-    if (!is_author() || !$query->is_main_query())
-        return;
-
-    $query->set('posts_per_page', 9);
-    $query->set('post_type', 'portfolio');
+    if ( $query->is_home() && $query->is_main_query() ) {
+        $query->set('posts_per_page', 9);
+        $query->set('post_type', 'portfolio');
+    }
 });

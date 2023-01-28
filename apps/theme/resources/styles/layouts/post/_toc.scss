@@ -47,11 +47,9 @@
     }
 
     @mixin textGradient {
-      background-image: linear-gradient(
-        to right,
-        var(--pointColor0),
-        var(--pointColor1)
-      );
+      background-image: linear-gradient(to right,
+          var(--pointColor0),
+          var(--pointColor1));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -74,12 +72,14 @@
       }
     }
 
-    li.active {
+    li.active.active.active.active {
+      background: transparent !important;
+
       &::before {
         content: none !important;
       }
 
-      > a {
+      >a {
         font-weight: normal;
         opacity: 1;
       }

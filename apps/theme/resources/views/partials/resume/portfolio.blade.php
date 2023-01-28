@@ -5,7 +5,8 @@
     </div>
   </div>
   <div class="grid grid-cols-1 lg:grid-cols-2 xxl:grid-cols-3 gap-[32px]">
-    @while (have_posts()) @php(the_post())
+    @while (have_posts())
+      @php(the_post())
       @include('partials.content-portfolio')
     @endwhile
   </div>
